@@ -11,3 +11,13 @@
   .about-photo{width:min(100%,420px);margin:0 auto}
   .about-photo:after{inset:12px -12px -12px 12px}
 }
+
+.lead-secondary{margin-top:12px!important}
+.lead-secondary em{font-style:italic;color:#2d2030}
+.volta-highlight{margin-top:58px;padding:34px 36px;border-left:2px solid #7b835e;background:#f8f4f0}
+.volta-highlight .card-kicker{margin:0 0 8px}
+.volta-highlight p:last-child{margin:0;font:500 30px/1.18 "Editors Note","Times New Roman",serif;color:#2d2030}
+@media(max-width:700px){
+  .volta-highlight{margin-top:42px;padding:28px}
+  .volta-highlight p:last-child{font-size:27px}
+}
