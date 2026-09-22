@@ -1,177 +1,172 @@
-<!doctype html><html lang="pt-BR"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#4b214c"><title>Taroguiando | Tessy Martins</title>
-<meta name="description" content="Volta Para Si com Tessy Martins. Um acompanhamento individual para quando você já entendeu muita coisa, mas continua vivendo os mesmos padrões.">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Pinyon+Script&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"><style>
-/* Conversion + visual refinement pass */
-.hero-grid{grid-template-columns:minmax(0,1fr) 253px !important;gap:72px !important}
-.hero-photo{width:253px !important;height:450px !important;align-self:center !important;justify-self:end !important}
-.hero-photo:before{inset:-14px -14px -14px 14px !important;background:#eadfea !important;filter:none !important;opacity:1 !important;transform:none !important}
-.hero-photo:after{inset:14px -16px -16px 16px !important;border:1px solid #b99fbd !important}
-.hero-photo img{width:253px !important;height:450px !important;aspect-ratio:auto !important;object-fit:contain !important;object-position:center !important;clip-path:none !important;filter:none !important}
-.hero h1{max-width:720px}
-.btn{border-radius:999px}
-.trust-check{padding:76px 0;background:#f7f2f7;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.trust-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:30px}
-.trust-grid article{padding:30px;background:var(--paper);border:1px solid #d8c9d9;min-height:230px;display:flex;flex-direction:column}
-.trust-grid span{color:var(--olive);font-size:11px;font-weight:700;letter-spacing:.08em}
-.trust-grid h3{margin:30px 0 12px;font-size:31px;line-height:1}
-.trust-grid p{margin:0;color:var(--muted);font-size:15px;line-height:1.5}
-.trust-grid article:hover{transform:translateY(-3px);box-shadow:0 14px 32px rgba(75,33,76,.08);border-color:#c5aec9;transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}
-.first-step{position:relative;overflow:hidden}
-.first-step:after{content:"";position:absolute;width:180px;height:180px;border:1px solid #d7c2d9;border-radius:50%;right:-70px;top:-70px;opacity:.7}
-.faq details{background:transparent}
-.faq summary{transition:color .2s ease}
-.faq summary:hover{color:var(--lilac)}
-.final{position:relative;overflow:hidden}
-.final:before{content:"";position:absolute;width:420px;height:420px;border:1px solid rgba(255,255,255,.12);border-radius:50%;left:-220px;top:-210px}
-@media(max-width:760px){
- .hero-grid{grid-template-columns:1fr !important;gap:28px !important}
- .hero-photo{order:2;width:253px !important;height:450px !important;align-self:center !important;justify-self:center !important}
- .hero-photo img{width:253px !important;height:450px !important}
- .trust-check{padding:54px 0}
- .trust-grid{display:block;margin-top:22px}
- .trust-grid article{min-height:0;padding:26px}
- .trust-grid article+article{margin-top:12px}
- .trust-grid h3{margin-top:22px;font-size:29px}
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#4b214c">
+<title>Taroguiando | Tessy Martins</title>
+<meta name="description" content="Tarô sem misticismo e Volta Para Si com Tessy Martins. Escolha por onde você quer começar.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Pinyon+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+.bio-page{
+  min-height:100svh;
+  background:#f7f2f7;
+  color:var(--ink);
+  display:flex;
+  flex-direction:column;
 }
-
-.imagine-section{padding:96px 0;background:#fbf8fb;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.imagine-intro{position:relative;max-width:860px;margin-bottom:52px}
-.imagine-mark{font-family:inherit;font-size:28px;font-weight:500;font-style:normal;line-height:1;color:#8f6aa8;display:inline-block;transform:translateY(-2px);margin-right:8px}
-.imagine-intro h2{max-width:800px}
-.imagine-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:#d8c9d9;border:1px solid #d8c9d9}
-.imagine-card{background:var(--paper);padding:34px 36px;min-height:190px}
-.imagine-card span{display:block;color:var(--olive);font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:18px}
-.imagine-card h3{font-size:30px;line-height:1.02;margin:0 0 12px}
-.imagine-card p{margin:0;color:var(--muted);font-size:16px;line-height:1.55}
-.imagine-closing{max-width:760px;margin:54px auto 0;text-align:center;font-size:20px;line-height:1.55;color:var(--ink)}
-.imagine-closing em{font-family:Georgia,serif;font-size:1.08em}
-@media(max-width:760px){
- .imagine-section{padding:64px 0}
- .imagine-intro{margin-bottom:34px}
- .imagine-mark{font-size:24px}
- .imagine-grid{grid-template-columns:1fr}
- .imagine-card{padding:27px 24px;min-height:0}
- .imagine-card h3{font-size:27px}
- .imagine-closing{margin-top:38px;font-size:18px}
+.bio-wrap{
+  width:min(100% - 32px, 720px);
+  margin:0 auto;
+  padding:42px 0 48px;
+  text-align:center;
 }
-
-/* Final conversion + color correction */
-:root{--olive:#8a6b95 !important}
-.imagine-card span{color:var(--lilac) !important}
-.imagine-mark{color:var(--lilac) !important}
-.imagine-action{margin-top:30px;gap:12px}
-.imagine-action>span{font-size:11px;letter-spacing:.06em;color:var(--muted)}
-.recognition .actions{margin-top:30px}
-.recognition .btn.outline{min-height:48px}
-.track b,.visual-break-mark,.recognition-grid span,.steps span,.trust-grid span,.tarot-list article>span,.card-top span,summary:after{color:var(--lilac) !important}
-.benefit-icon{color:var(--plum) !important}
-.first-price span,.payment-note,.tools-grid span{color:var(--lilac) !important}
-.single-quote cite{color:var(--lilac) !important}
-@media(max-width:760px){
- .imagine-action{align-items:center}
- .imagine-action>span{text-align:center;line-height:1.4}
- .recognition .actions{margin-top:24px}
- .recognition .btn.outline{font-size:13px}
+.bio-photo{
+  width:124px;
+  height:124px;
+  margin:0 auto 24px;
+  border-radius:50%;
+  overflow:hidden;
+  border:1px solid #cdb9d0;
+  background:#eee6f0;
 }
-
-</style></head>
-<body><header class="site-header"><div class="shell header-inner"><a class="brand" href="./index.html" aria-label="Tessy Martins"><span class="brand-name">Tessy Martins</span></a><nav class="header-nav"><a href="#volta">Volta Para Si</a><a href="#reconhece">Como funciona</a><a href="#depoimentos">Depoimentos</a><a href="#sobre">Sobre</a></nav><a class="header-link" href="#primeiro-encontro">Quero começar →</a></div></header>
-<main>
-
-<section class="hero"><div class="shell hero-grid"><div class="hero-photo"><img src="https://raw.githubusercontent.com/tessyanne14-pixel/-taroguiando-link-bio/main/assets/tessy-hero-768.jpg" alt="Tessy Martins, do Taroguiando." width="384" height="684"></div><div>
-<p class="eyebrow">TESSY MARTINS · VOLTA PARA SI</p><h1>Você já entendeu muita coisa sobre você. Então por que continua acontecendo?</h1>
-<p class="hero-sub">Você sabe o que não quer mais. Sabe o que deveria fazer. Promete que, dessa vez, vai ser diferente.</p><p class="hero-question">Até que a vida acontece e você se vê no mesmo lugar.</p>
-<div class="actions"><a class="btn dark" href="#primeiro-encontro">Quero entender se isso é para mim</a></div></div></div></section>
-
-<div class="marquee"><div class="track"><span>CLAREZA PARA ENTENDER</span><b>✦</b><span>CONTINUIDADE PARA MUDAR</span><b>✦</b><span>CLAREZA PARA ENTENDER</span><b>✦</b><span>CONTINUIDADE PARA MUDAR</span><b>✦</b></div></div><section class="benefit-strip"><div class="shell benefit-grid"><div><span class="benefit-icon">○</span><h3>Se posicionar</h3><p>sem passar dias se culpando depois.</p></div><div><span class="benefit-icon">♡</span><h3>Dizer não</h3><p>sem sentir que fez alguma coisa errada.</p></div><div><span class="benefit-icon">⌁</span><h3>Perceber o padrão</h3><p>antes de chegar, de novo, ao mesmo lugar.</p></div><div><span class="benefit-icon">✦</span><h3>Fazer escolhas</h3><p>sem precisar da aprovação de todo mundo.</p></div></div></section>
-
-<section class="recognition tint" id="reconhece"><div class="shell"><div class="intro narrow"><p class="eyebrow">TALVEZ VOCÊ SE RECONHEÇA</p><h2>Não é que você não saiba. Às vezes, você sabe até demais.</h2></div>
-<div class="recognition-grid"><div><span>01</span><p>“Eu sei o que me faz mal. Mesmo assim, quando acontece, faço igual de novo.”</p></div><div><span>02</span><p>“Eu prometo que dessa vez vou me posicionar. Aí a pessoa fica chateada e eu volto atrás.”</p></div><div><span>03</span><p>“Eu já entendi de onde isso vem. Só não consigo agir diferente quando a situação acontece.”</p></div></div>
-<p class="closing">Talvez você já tenha lido, pensado, conversado e entendido muita coisa sobre você. E ainda assim exista uma distância entre saber e conseguir viver de outro jeito.</p><div class="actions"><a class="btn outline" href="#primeiro-encontro">Quero entender se o Volta Para Si faz sentido para mim</a></div></div></section>
-
-
-<section class="imagine-section"><div class="shell">
-  <div class="intro imagine-intro">
-    <p class="eyebrow"><span class="imagine-mark">✦</span> IMAGINE</p>
-    <h2>Como seria viver de um jeito que você já sabe, lá no fundo, que gostaria de viver?</h2>
+.bio-photo img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center 24%;
+}
+.bio-kicker{
+  margin:0 0 8px;
+  font:600 10px/1.2 "Jost",sans-serif;
+  letter-spacing:.16em;
+  color:#8a6b95;
+}
+.bio-title{
+  margin:0;
+  font:400 clamp(44px,9vw,68px)/.9 "Editors Note","Times New Roman",serif;
+  font-style:italic;
+  letter-spacing:-.03em;
+  color:var(--plum);
+}
+.bio-intro{
+  max-width:590px;
+  margin:22px auto 34px;
+  font-size:16px;
+  line-height:1.55;
+  color:var(--muted);
+}
+.bio-intro strong{color:var(--ink);font-weight:600}
+.bio-options{
+  display:grid;
+  gap:14px;
+  text-align:left;
+}
+.bio-card{
+  position:relative;
+  min-height:190px;
+  padding:30px 30px 28px;
+  border:1px solid #d8c9d9;
+  background:#fff;
+  text-decoration:none;
+  color:var(--ink);
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+  transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease;
+}
+.bio-card:hover{
+  transform:translateY(-3px);
+  box-shadow:0 14px 32px rgba(75,33,76,.09);
+  border-color:#b99fbd;
+}
+.bio-card:after{
+  content:"↗";
+  position:absolute;
+  right:24px;
+  top:20px;
+  font:400 25px/1 "Jost",sans-serif;
+  color:#8a6b95;
+}
+.bio-card .number{
+  position:absolute;
+  left:30px;
+  top:23px;
+  font:600 10px/1 "Jost",sans-serif;
+  letter-spacing:.14em;
+  color:#8a6b95;
+}
+.bio-card h2{
+  margin:0 42px 8px 0;
+  font:400 39px/.98 "Editors Note","Times New Roman",serif;
+  font-style:italic;
+  color:var(--plum);
+}
+.bio-card p{
+  margin:0;
+  max-width:540px;
+  font-size:14px;
+  line-height:1.48;
+  color:var(--muted);
+}
+.bio-card.volta{background:#eee6f0}
+.bio-card.taro{background:#f1ece7}
+.bio-note{
+  margin:26px auto 0;
+  font-size:11px;
+  line-height:1.45;
+  letter-spacing:.03em;
+  color:#7f7180;
+}
+.bio-footer{
+  margin-top:auto;
+  padding:18px 16px 24px;
+  text-align:center;
+  font:600 10px/1.3 "Jost",sans-serif;
+  letter-spacing:.13em;
+  text-transform:uppercase;
+  color:#8a6b95;
+}
+@media(max-width:760px){
+  .bio-wrap{padding:34px 0 34px}
+  .bio-photo{width:112px;height:112px;margin-bottom:21px}
+  .bio-intro{margin:18px auto 28px;font-size:15px}
+  .bio-card{min-height:178px;padding:28px 22px 24px}
+  .bio-card .number{left:22px}
+  .bio-card:after{right:18px}
+  .bio-card h2{font-size:35px}
+}
+</style>
+</head>
+<body class="bio-page">
+<main class="bio-wrap">
+  <div class="bio-photo">
+    <img src="https://raw.githubusercontent.com/tessyanne14-pixel/-taroguiando-link-bio/main/assets/tessy-hero-768.jpg" alt="Tessy Martins">
   </div>
-  <div class="imagine-grid">
-    <article class="imagine-card"><span>01 · RECEBER UM ELOGIO</span><h3>e conseguir simplesmente dizer “obrigada”.</h3><p>Sem sentir que precisa devolver o elogio, diminuir o que fez ou procurar um defeito para justificar por que aquilo não foi tão grande assim.</p></article>
-    <article class="imagine-card"><span>02 · DIZER NÃO</span><h3>sem precisar se explicar até a outra pessoa concordar com você.</h3><p>Sem escrever uma justificativa de cinco linhas depois. Sem ficar repassando a conversa na cabeça, pensando se a pessoa ficou chateada.</p></article>
-    <article class="imagine-card"><span>03 · SE POSICIONAR</span><h3>e conseguir sustentar o que você pensa.</h3><p>Mesmo quando alguém discorda, sem passar horas depois se perguntando se foi grossa, exagerada ou egoísta.</p></article>
-    <article class="imagine-card"><span>04 · FAZER UMA ESCOLHA</span><h3>porque é o que você quer, e não porque vai deixar todo mundo confortável.</h3><p>Sem precisar da aprovação de todo mundo para confiar que uma decisão sua pode ser boa.</p></article>
-    <article class="imagine-card"><span>05 · PERCEBER O PADRÃO</span><h3>antes de chegar novamente ao mesmo lugar.</h3><p>Reconhecer os sinais enquanto ainda dá tempo de escolher uma resposta diferente.</p></article>
-    <article class="imagine-card"><span>06 · SE OLHAR COM MAIS CARINHO</span><h3>sem transformar cada erro em prova de que você não é boa o bastante.</h3><p>Sem precisar ser perfeita para reconhecer o que há de bom em você.</p></article>
+  <p class="bio-kicker">TAROGUIANDO · TESSY MARTINS</p>
+  <h1 class="bio-title">Por onde você quer começar?</h1>
+  <p class="bio-intro">Aqui você encontra dois caminhos diferentes para momentos diferentes. <strong>Escolha o que mais combina com o que você está vivendo agora.</strong></p>
+
+  <div class="bio-options">
+    <a class="bio-card volta" href="./volta-para-si.html">
+      <span class="number">01 · ACOMPANHAMENTO</span>
+      <h2>Volta Para Si</h2>
+      <p>Para quando você já entendeu muita coisa, mas continua vivendo os mesmos padrões e quer trabalhar isso com continuidade.</p>
+    </a>
+
+    <a class="bio-card taro" href="./taro.html">
+      <span class="number">02 · TARÔ SEM MISTICISMO</span>
+      <h2>Tarô</h2>
+      <p>Para quando você precisa entender melhor uma situação, enxergar possibilidades e ganhar clareza antes de decidir.</p>
+    </a>
   </div>
-  <p class="imagine-closing">É sobre isso que a mudança começa a falar.<br><em>Não sobre virar outra pessoa.</em><br>Sobre conseguir viver de um jeito que hoje você já sabe, lá no fundo, que gostaria de viver.</p><div class="actions center imagine-action"><a class="btn dark" href="#primeiro-encontro">Quero começar pelo primeiro encontro</a><span>R$200 · depois você decide se quer continuar</span></div>
-</div></section>
 
-<section class="volta-intro" id="volta"><div class="shell"><div class="intro narrow"><p class="eyebrow">VOLTA PARA SI · HEAL YOUR LIFE®</p><h2>Entender é importante. Mas, às vezes, entender não basta.</h2><p class="large">O Volta Para Si é um acompanhamento individual para olhar com mais profundidade para aquilo que continua se repetindo e trabalhar, com continuidade, uma relação diferente com você e com a sua vida.</p></div>
-<div class="promise-grid"><div><span>VOCÊ JÁ SABE</span><p>o que te incomoda, o que te machuca ou o que você gostaria de mudar.</p></div><div><span>O QUE A GENTE INVESTIGA</span><p>é por que, mesmo sabendo disso, você continua reagindo, escolhendo ou se relacionando do mesmo jeito.</p></div><div><span>O QUE VOCÊ TRABALHA</span><p>é essa distância entre o que você entende e o que consegue sustentar na vida real.</p></div></div>
-<div class="actions"><a class="btn dark" href="#primeiro-encontro">Quero começar pelo primeiro encontro</a></div></div></section>
-
-<section class="human-presence"><div class="shell human-presence-inner">
-  <div>
-    <p class="eyebrow">COMO É ESTAR AQUI</p>
-    <h2>Você não precisa chegar sabendo explicar tudo.</h2>
-  </div>
-  <div>
-    <p class="large">Pode chegar confusa. Cansada. Contraditória. Pode saber exatamente o que deveria fazer e, ainda assim, não conseguir fazer.</p>
-    <p>Você não precisa organizar a sua história antes de chegar. Não precisa encontrar as palavras certas. A gente começa de onde você está.</p>
-    <p class="human-note"><strong>Meu papel não é dizer o que você deve fazer.</strong> É ajudar você a enxergar o que está acontecendo e trabalhar novas possibilidades de resposta.</p>
-  </div>
-</div></section>
-
-<section class="objection"><div class="shell two"><div><p class="eyebrow">“MAS EU JÁ SEI QUAL É O MEU PROBLEMA.”</p><h2>E talvez esse seja justamente o ponto.</h2></div><div><p class="large">Você não precisa descobrir mais uma coisa sobre você.</p><p>Saber o que fazer não significa conseguir fazer quando chega a hora.</p><p>Você pode saber que deveria dizer não e ainda assim dizer sim. Pode saber que aquela relação não te faz bem e continuar procurando uma brecha para ficar. Pode saber que não precisa da aprovação de todo mundo e ainda sentir aquele aperto quando alguém desaprova você.</p><p>O trabalho começa quando a pergunta deixa de ser apenas <strong>“o que está acontecendo comigo?”</strong> e passa a ser <strong>“por que, mesmo sabendo, eu continuo fazendo isso?”</strong></p><p class="objection-close"><strong>O acompanhamento não começa ensinando você aquilo que já sabe. Começa olhando para o que acontece entre saber e conseguir agir diferente.</strong></p></div></div></section>
-
-
-<section class="visual-break"><div class="shell visual-break-inner"><span class="visual-break-mark">✦</span><p class="eyebrow">A DISTÂNCIA ENTRE SABER E VIVER</p><h2>Saber é uma coisa.<br><em>Conseguir fazer diferente</em> é outra.</h2><p>Talvez você não queira virar outra pessoa. Talvez queira conseguir se posicionar sem se abandonar, dizer não sem se sentir culpada, perceber um padrão antes de repeti-lo e fazer escolhas que realmente façam sentido para você.</p></div></section>
-<section class="volta-detail"><div class="shell two"><div><p class="eyebrow">COMO FUNCIONA</p><h2>Você não precisa chegar pronta.</h2><p class="large">Você chega com uma situação real, do jeito que ela está acontecendo na sua vida. A partir daí, a gente olha para o que está por trás, identifica o padrão que se repete e trabalha novas formas de responder a ele.</p><a class="btn dark" href="./volta-para-si.html">Conhecer o processo</a></div><div class="steps"><div><span>01</span><p><strong>Você traz o que está acontecendo.</strong><br>Não precisa saber explicar tudo.</p></div><div><span>02</span><p><strong>A gente olha para o que está por trás.</strong><br>Sem transformar sua vida em uma lista de defeitos.</p></div><div><span>03</span><p><strong>Você começa a perceber os padrões.</strong><br>Inclusive aqueles que parecem diferentes, mas levam ao mesmo lugar.</p></div><div><span>04</span><p><strong>E trabalha isso ao longo dos encontros.</strong><br>Para construir uma relação diferente com você e com aquilo que está vivendo.</p></div></div></div></section>
-
-<section class="what-changes"><div class="shell two"><div><p class="eyebrow">O QUE COMEÇA A MUDAR</p><h2>Você começa a perceber antes de repetir.</h2></div><div><p class="large">Você começa a perceber a conversa antes de entrar nela.</p><p>Percebe quando está prestes a dizer “sim” querendo dizer “não”.</p><p>Percebe quando está tentando convencer alguém para se sentir segura da própria escolha.</p><p>Percebe quando está se diminuindo antes mesmo que alguém faça isso.</p><p class="what-changes-close"><strong>E, aos poucos, aparece uma possibilidade nova: você percebe que pode responder diferente.</strong></p></div></div></section><section class="testimonials tint individual-testimonial" id="depoimentos"><div class="shell"><div class="intro narrow"><p class="eyebrow">DEPOIMENTO DE UM ACOMPANHAMENTO INDIVIDUAL</p><h2>O que pode começar a mudar quando você olha para isso com alguém.</h2></div><div class="single-quote"><blockquote>“Estava muito agoniada, psicologicamente precisando de uma ajuda!! Pedindo socorro, e aí veio o que estava precisando.<br><br>Comecei a fazer on-line com a minha mentora Tessy, que ajudou muito em 4 sessões, já deu pra perceber e conseguir ter outras visões o que estava incomodando muito através de nossas conversas e chegou a conclusões que nunca tinha percebido.<br><br>Estou muito contente em poder acalmar as minhas angústias e com certeza acabar com as minhas incertezas e poder ficar mais calma e saber e ter certeza o quanto sou e como fico feliz da importância de minha pessoa.<br><br>Obrigada minha querida Tessy!!”<cite>Participante · Volta Para Si</cite></blockquote></div></div></section><section class="mid-cta"><div class="shell mid-cta-inner"><p class="eyebrow">E SE VOCÊ JÁ ESTÁ CANSADA DE TENTAR SOZINHA?</p><h2>Talvez você não precise de mais uma explicação. Precise de um espaço para finalmente trabalhar isso.</h2><p>O primeiro encontro é o começo. Você chega com o que está vivendo, a gente olha para isso juntas e você decide, depois, se quer continuar.</p><a class="btn dark" href="#primeiro-encontro">Quero começar pelo primeiro encontro</a></div></section><section class="method-origin"><div class="shell"><div class="method-origin-grid"><div><p class="eyebrow">DE ONDE VEM ESSE TRABALHO</p><h2>Uma metodologia internacional, criada por Louise Hay e licenciada pela Hay House.</h2><p class="large">O Heal Your Life® é uma metodologia baseada no trabalho de Louise Hay, com formação e licença próprias e presença internacional. Em março de 2026, concluí a formação internacional e o treinamento avançado de Terapeutas Heal Your Life®, com dupla certificação como <strong>Terapeuta e Facilitadora</strong>.</p><p>No acompanhamento, essa metodologia entra junto com escuta, prática e o olhar para a situação concreta que você está vivendo. A ideia não é aplicar uma receita pronta, mas usar as ferramentas que fizerem sentido para o que você está vivendo.</p><blockquote>“É seguro olhar para dentro.”<cite>Louise Hay</cite></blockquote></div><div><p class="eyebrow">FERRAMENTAS QUE PODEM ENTRAR NO PROCESSO</p><div class="tools-grid"><div><span>01</span><h3>Afirmações</h3><p>Para construir uma conversa interna mais consciente.</p></div><div><span>02</span><h3>Liberação emocional</h3><p>Para reconhecer o que ainda pesa.</p></div><div><span>03</span><h3>Criança interior</h3><p>Para olhar para experiências que ainda reverberam.</p></div><div><span>04</span><h3>Meditação</h3><p>Para desacelerar e criar espaço.</p></div><div><span>05</span><h3>Visualização</h3><p>Para experimentar novas possibilidades.</p></div><div><span>06</span><h3>Escrita</h3><p>Para colocar em palavras o que está confuso.</p></div></div><p class="tools-note">As ferramentas entram de acordo com o que você está vivendo. Não existe uma receita pronta.</p></div></div></div></section>
-
-<section class="qualification"><div class="shell qualification-inner">
-  <div class="intro narrow">
-    <p class="eyebrow">TALVEZ SEJA PARA VOCÊ</p>
-    <h2>Talvez você esteja pronta para olhar para isso de outro jeito se…</h2>
-  </div>
-  <div class="qualification-list">
-    <div><span>01</span><p>Você vive tentando entender o que acontece, mas continua reagindo do mesmo jeito.</p></div>
-    <div><span>02</span><p>Você sabe dizer o que deveria fazer, mas na hora trava, volta atrás ou se culpa.</p></div>
-    <div><span>03</span><p>Você está cansada de repetir conversas, relações ou escolhas que prometeu não repetir.</p></div>
-    <div><span>04</span><p>Você quer mudar, mas não quer passar por mais um processo em que alguém simplesmente diz o que você deveria fazer.</p></div>
-  </div>
-  <p class="qualification-closing">O Volta Para Si começa exatamente aí.</p>
-</div></section>
-
-<section class="trust-check"><div class="shell"><div class="intro narrow"><p class="eyebrow">ANTES DE INVESTIR</p><h2>Você não precisa ter certeza de tudo. Precisa só de um primeiro passo.</h2><p class="large">Se eu estivesse chegando aqui pela primeira vez, eu gostaria de saber exatamente isso antes de decidir.</p></div><div class="trust-grid"><article><span>01</span><h3>Você não precisa chegar pronta.</h3><p>Não precisa saber explicar tudo, nem organizar a história inteira antes de me procurar.</p></article><article><span>02</span><h3>Você não está se comprometendo com um processo no escuro.</h3><p>O primeiro encontro custa R$200. Depois dele, você decide se quer continuar. O ciclo de 4 encontros só entra se fizer sentido.</p></article><article><span>03</span><h3>Você não precisa virar outra pessoa.</h3><p>É olhar para o que está acontecendo com você e trabalhar, com mais consciência, possibilidades diferentes de responder à vida.</p></article></div></div></section>
-
-
-
-<section class="first-step" id="primeiro-encontro"><div class="shell two"><div><p class="eyebrow">COMECE PELO PRIMEIRO ENCONTRO</p><h2>Você não precisa decidir o processo inteiro. Só precisa começar.</h2></div><div><div class="first-price"><span>PRIMEIRO ENCONTRO</span><strong>R$200</strong></div><p class="large">Você chega com uma situação que continua te incomodando. Pode ser uma relação que você não consegue deixar para trás, uma dificuldade de se posicionar, um padrão que você prometeu que não repetiria ou uma escolha que sabe que precisa fazer, mas continua adiando.</p><p>A gente começa por aí. Você não precisa chegar com respostas. O primeiro encontro é justamente para começar a entender o que está acontecendo e enxergar o que precisa ser trabalhado.</p><p>Depois, você decide se quer continuar. Se fizer sentido, podemos construir um ciclo de 4 encontros para aprofundar esse trabalho.</p><div class="payment-note">Pix ou cartão · ciclo de 4 encontros: R$800</div><div class="actions"><a class="btn dark" href="https://wa.me/5519998140787?text=Oi%2C%20Tessy.%20Quero%20conversar%20sobre%20o%20que%20est%C3%A1%20acontecendo%20comigo%20e%20entender%20se%20o%20Volta%20Para%20Si%20faz%20sentido%20para%20mim." target="_blank" rel="noopener">Quero conversar sobre o que está acontecendo comigo</a></div></div></div></section>
-
-<section class="tarot-bridge"><div class="shell"><div class="intro narrow"><p class="eyebrow">E SE VOCÊ AINDA NÃO SOUBER POR ONDE COMEÇAR?</p><h2>Às vezes, antes de trabalhar uma questão, você precisa conseguir enxergá-la melhor.</h2><p class="large">O Tarô pode ser esse primeiro passo. Não para decidir por você, mas para colocar luz no que está acontecendo e ajudar você a enxergar possibilidades, dinâmicas e pontos que talvez estejam passando despercebidos.</p></div>
-<div class="site-card"><div><p class="kicker">TARÔ SEM MISTICISMO</p><h3>Clareza para entender. Continuidade para mudar.</h3><p>Leituras para amor, trabalho, dinheiro, decisões e outras situações que você quer compreender melhor.</p></div><strong>A partir de R$49 ↗</strong></div><div class="actions"><a class="text-link" href="./taro.html">Conhecer as leituras de Tarô ↗</a></div></div></section>
-
-<section class="about" id="sobre"><div class="shell about-grid"><p class="eyebrow">QUEM ESTÁ DO OUTRO LADO</p><h2>Antes de virar profissão, esse trabalho atravessou a minha própria vida.</h2>
-<p class="large">Eu sou a Tessy. Cheguei a esses caminhos primeiro tentando compreender a mim mesma. Depois vieram estudo, formação e prática.</p>
-<p>Hoje, meu trabalho reúne <strong>Heal Your Life®, Tarô e Radiestesia</strong>. Cada um tem um lugar diferente. E eu gosto de deixar essa diferença clara, porque nem toda situação pede a mesma coisa.</p>
-<a class="text-link" href="https://taroguiando.com.br/sobre" target="_blank" rel="noopener">Conhecer a Tessy ↗</a></div></section>
-
-<section class="faq"><div class="shell faq-grid"><div><p class="eyebrow">PERGUNTAS FREQUENTES</p><h2>Talvez sua dúvida esteja aqui.</h2></div><div class="faq-list">
-<details><summary>Preciso saber exatamente o que está acontecendo para começar?</summary><p>Não. Você pode chegar justamente porque está confusa. O primeiro encontro ajuda a organizar o que está acontecendo e entender qual caminho faz sentido.</p></details>
-<details><summary>Mas eu já sei qual é o meu problema. O que o acompanhamento acrescenta?</summary><p>O Volta Para Si não parte da ideia de que você precisa descobrir mais uma coisa sobre você. O foco é olhar para a distância entre o que você já entende e o que consegue viver na prática, percebendo padrões e trabalhando novas formas de se relacionar com você mesma.</p></details>
-<details><summary>Preciso fechar um ciclo de 4 encontros logo de cara?</summary><p>Não. Você começa pelo primeiro encontro, de R$200. Depois dele, você pode decidir se quer continuar. Se fizer sentido, o ciclo de 4 encontros custa R$800.</p></details>
-<details><summary>O Volta Para Si é terapia?</summary><p>É um acompanhamento individual baseado na metodologia Heal Your Life®. Não substitui psicoterapia, psiquiatria ou outros cuidados de saúde quando eles forem necessários.</p></details>
-<details><summary>E se eu estiver em dúvida entre Tarô e Volta Para Si?</summary><p>Você não precisa decidir sozinha. Me conte brevemente o que está acontecendo e eu te ajudo a entender qual caminho faz mais sentido para esse momento.</p></details>
-<details><summary>E se eu quiser fazer Tarô primeiro?</summary><p>Pode. O Tarô pode ser um primeiro espaço de clareza. Depois, se você perceber que a questão é mais sobre um padrão que continua se repetindo em você, podemos conversar sobre o Volta Para Si.</p></details>
-<details><summary>Como faço para começar?</summary><p>É só me chamar. Você pode me contar, em poucas palavras, o que está acontecendo. Se quiser começar pelo Volta Para Si, diga isso na mensagem e eu te explico os próximos passos.</p></details>
-</div></div></section>
-
-<section class="final"><div class="shell"><p class="eyebrow">VOCÊ PODE COMEÇAR POR ONDE ESTÁ.</p><h2>Se você cansou de entender e continuar no mesmo lugar, talvez seja hora de olhar para isso de outro jeito.</h2><p>Você não precisa ter tudo organizado. Me conte, em poucas palavras, o que está acontecendo. A gente começa por aí.</p><div class="actions center"><a class="btn light-btn" href="https://wa.me/5519998140787?text=Oi%2C%20Tessy.%20Vim%20pelo%20seu%20Instagram%20e%20quero%20conversar%20sobre%20o%20Volta%20Para%20Si." target="_blank" rel="noopener">Quero conversar sobre o Volta Para Si</a><a class="text-link light-link" href="https://taroguiando.com.br/" target="_blank" rel="noopener">Conhecer o site completo ↗</a></div></div></section>
-
-<footer><div class="shell footer"><div><a class="footer-signature" href="./index.html">Tessy Martins</a><p>Tarô sem misticismo · Heal Your Life® · Radiestesia</p></div><a href="https://taroguiando.com.br/" target="_blank" rel="noopener">taroguiando.com.br ↗</a></div></footer>
-</main></body></html>
+  <p class="bio-note">Clareza para entender. Continuidade para mudar.</p>
+</main>
+<footer class="bio-footer">Taroguiando · Tessy Martins</footer>
+</body>
+</html>
