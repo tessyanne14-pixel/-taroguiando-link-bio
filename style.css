@@ -87,3 +87,52 @@ section{scroll-margin-top:88px}
   .intro{margin-bottom:20px}
   .actions{margin-top:22px}
 }
+
+/* Final mobile rhythm + real Editors Note swash + portrait background blur */
+h1,h2,h3,.hero-question,.recognition-grid p,.quotes blockquote,.visual-break h2{
+  font-feature-settings:"ss01" 1 !important;
+  font-variant-ligatures:normal;
+}
+.hero-photo{
+  position:relative;
+  isolation:isolate;
+  overflow:visible;
+}
+.hero-photo:before{
+  content:"";
+  position:absolute;
+  inset:-18px;
+  z-index:0;
+  background:url("./assets/tessy-landing.webp") center/cover no-repeat;
+  filter:blur(18px);
+  transform:scale(1.05);
+  opacity:.95;
+}
+.hero-photo img{
+  position:relative;
+  z-index:1;
+  clip-path:polygon(
+    4% 9%, 12% 3%, 28% 0%, 45% 1%, 55% 5%, 59% 12%, 58% 20%,
+    60% 28%, 64% 34%, 72% 39%, 84% 43%, 100% 49%, 100% 100%,
+    0 100%, 0 90%, 4% 80%, 3% 70%, 0 64%, 3% 55%, 5% 48%,
+    4% 40%, 3% 32%, 4% 24%, 4% 16%
+  );
+}
+.hero-photo:after{
+  z-index:2;
+}
+@media(max-width:760px){
+  .hero{padding-top:24px;padding-bottom:30px}
+  .hero-grid{gap:28px}
+  .paths,.testimonials,.recognition,.about,.volta-detail{padding-top:40px;padding-bottom:40px}
+  .volta-intro,.objection,.first-step{padding-top:44px;padding-bottom:44px}
+  .tarot-bridge,.investment,.faq{padding-top:42px;padding-bottom:42px}
+  .visual-break{padding-top:46px;padding-bottom:46px}
+  .final{padding-top:48px;padding-bottom:54px}
+  .promise-grid{margin-top:22px}
+  .recognition-grid{margin-top:20px}
+  .intro{margin-bottom:16px}
+  .actions{margin-top:18px}
+  .recognition-grid>div{padding:24px}
+  .quotes blockquote{padding:26px}
+}
