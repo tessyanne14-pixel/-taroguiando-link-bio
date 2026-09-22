@@ -267,3 +267,19 @@ h1,h2,h3,.hero-question,.recognition-grid p,.quotes blockquote,.visual-break h2{
  .single-quote blockquote:before{font-size:58px;margin-bottom:20px}
  .single-quote cite{margin-top:22px}
 }
+/* Header signature: match the main site's Editors Note treatment */
+.brand-name{
+  font-family:"Editors Note","Times New Roman",serif !important;
+  font-style:italic !important;
+  font-weight:400 !important;
+  font-feature-settings:"ss01" 1;
+  font-size:31px !important;
+  line-height:.9 !important;
+  letter-spacing:-.035em !important;
+  color:var(--plum) !important;
+}
+@media(max-width:760px){
+  .brand-name{
+    font-size:27px !important;
+  }
+}
