@@ -254,3 +254,16 @@ h1,h2,h3,.hero-question,.recognition-grid p,.quotes blockquote,.visual-break h2{
   .trust-check{padding-top:40px !important;padding-bottom:42px !important}
   .testimonials{padding-top:40px !important;padding-bottom:42px !important}
 }
+
+/* Individual testimonial */
+.individual-testimonial .intro{margin-bottom:34px}
+.single-quote{max-width:920px;margin:0 auto}
+.single-quote blockquote{margin:0;padding:48px 56px;background:var(--paper);border:1px solid #d8c9d9;box-shadow:0 18px 45px rgba(75,33,76,.07);font-size:21px;line-height:1.65;color:var(--ink)}
+.single-quote blockquote:before{content:"“";display:block;font-family:"Editors Note",Georgia,serif;font-size:74px;line-height:.55;color:var(--lilac);margin-bottom:24px}
+.single-quote cite{display:block;margin-top:28px;font-family:Jost,sans-serif;font-style:normal;font-size:12px;line-height:1.4;letter-spacing:.08em;text-transform:uppercase;color:var(--olive)}
+@media(max-width:760px){
+ .individual-testimonial .intro{margin-bottom:22px}
+ .single-quote blockquote{padding:32px 24px;font-size:17px;line-height:1.6}
+ .single-quote blockquote:before{font-size:58px;margin-bottom:20px}
+ .single-quote cite{margin-top:22px}
+}
