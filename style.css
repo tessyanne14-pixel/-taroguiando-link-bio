@@ -283,3 +283,22 @@ h1,h2,h3,.hero-question,.recognition-grid p,.quotes blockquote,.visual-break h2{
     font-size:27px !important;
   }
 }
+
+/* Conversion pass: stronger bridge + shorter mobile reading rhythm */
+.mid-cta{padding:58px 0;background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.mid-cta-inner{max-width:860px;text-align:center}
+.mid-cta h2{max-width:820px;margin:0 auto;font-size:clamp(42px,5vw,66px)}
+.mid-cta p:not(.eyebrow){max-width:650px;margin:20px auto 0;color:var(--muted);font-size:17px;line-height:1.55}
+.mid-cta .btn{margin-top:24px}
+@media(max-width:760px){
+  .mid-cta{padding:42px 0}
+  .mid-cta h2{font-size:42px}
+  .mid-cta p:not(.eyebrow){font-size:16px;margin-top:16px}
+  .mid-cta .btn{margin-top:20px}
+  .method-origin{padding-top:38px !important;padding-bottom:40px !important}
+  .method-origin-grid>div+div{margin-top:28px !important}
+  .tools-grid{gap:8px !important;margin-top:18px !important}
+  .tools-grid>div{padding:17px !important}
+  .tools-grid h3{margin:12px 0 6px !important}
+  .trust-grid h3{font-size:27px !important}
+}
