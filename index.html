@@ -3,7 +3,40 @@
 <meta name="theme-color" content="#4b214c"><title>Taroguiando | Tessy Martins</title>
 <meta name="description" content="Volta Para Si com Tessy Martins. Um acompanhamento individual para quando você já entendeu muita coisa, mas continua vivendo os mesmos padrões.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Pinyon+Script&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Pinyon+Script&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"><style>
+/* Conversion + visual refinement pass */
+.hero-grid{grid-template-columns:minmax(0,1fr) 253px !important;gap:72px !important}
+.hero-photo{width:253px !important;height:450px !important;align-self:center !important;justify-self:end !important}
+.hero-photo:before{inset:-14px -14px -14px 14px !important;background:#eadfea !important;filter:none !important;opacity:1 !important;transform:none !important}
+.hero-photo:after{inset:14px -16px -16px 16px !important;border:1px solid #b99fbd !important}
+.hero-photo img{width:253px !important;height:450px !important;aspect-ratio:auto !important;object-fit:contain !important;object-position:center !important;clip-path:none !important;filter:none !important}
+.hero h1{max-width:720px}
+.btn{border-radius:999px}
+.trust-check{padding:76px 0;background:#f7f2f7;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.trust-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:30px}
+.trust-grid article{padding:30px;background:var(--paper);border:1px solid #d8c9d9;min-height:230px;display:flex;flex-direction:column}
+.trust-grid span{color:var(--olive);font-size:11px;font-weight:700;letter-spacing:.08em}
+.trust-grid h3{margin:30px 0 12px;font-size:31px;line-height:1}
+.trust-grid p{margin:0;color:var(--muted);font-size:15px;line-height:1.5}
+.trust-grid article:hover{transform:translateY(-3px);box-shadow:0 14px 32px rgba(75,33,76,.08);border-color:#c5aec9;transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}
+.first-step{position:relative;overflow:hidden}
+.first-step:after{content:"";position:absolute;width:180px;height:180px;border:1px solid #d7c2d9;border-radius:50%;right:-70px;top:-70px;opacity:.7}
+.faq details{background:transparent}
+.faq summary{transition:color .2s ease}
+.faq summary:hover{color:var(--lilac)}
+.final{position:relative;overflow:hidden}
+.final:before{content:"";position:absolute;width:420px;height:420px;border:1px solid rgba(255,255,255,.12);border-radius:50%;left:-220px;top:-210px}
+@media(max-width:760px){
+ .hero-grid{grid-template-columns:1fr !important;gap:28px !important}
+ .hero-photo{order:2;width:253px !important;height:450px !important;align-self:center !important;justify-self:center !important}
+ .hero-photo img{width:253px !important;height:450px !important}
+ .trust-check{padding:54px 0}
+ .trust-grid{display:block;margin-top:22px}
+ .trust-grid article{min-height:0;padding:26px}
+ .trust-grid article+article{margin-top:12px}
+ .trust-grid h3{margin-top:22px;font-size:29px}
+}
+</style></head>
 <body><header class="site-header"><div class="shell header-inner"><a class="brand" href="./index.html" aria-label="Tessy Martins"><span class="brand-name">Tessy Martins</span></a><nav class="header-nav"><a href="#volta">Volta Para Si</a><a href="#reconhece">Como funciona</a><a href="#depoimentos">Depoimentos</a><a href="#sobre">Sobre</a></nav><a class="header-link" href="#primeiro-encontro">Quero começar →</a></div></header>
 <main>
 
@@ -27,6 +60,8 @@
 
 <section class="visual-break"><div class="shell visual-break-inner"><span class="visual-break-mark">✦</span><p class="eyebrow">A DISTÂNCIA ENTRE SABER E VIVER</p><h2>Saber é uma coisa.<br><em>Conseguir fazer diferente</em> é outra.</h2><p>É justamente nesse espaço que o Volta Para Si trabalha.</p></div></section>
 <section class="volta-detail"><div class="shell two"><div><p class="eyebrow">COMO FUNCIONA</p><h2>Você não precisa chegar pronta.</h2><p class="large">Você chega com o que está acontecendo. A partir daí, a gente olha para o que está por trás, percebe os padrões e trabalha isso ao longo dos encontros.</p><a class="btn dark" href="./volta-para-si.html">Conhecer o processo</a></div><div class="steps"><div><span>01</span><p><strong>Você traz o que está acontecendo.</strong><br>Não precisa saber explicar tudo.</p></div><div><span>02</span><p><strong>A gente olha para o que está por trás.</strong><br>Sem transformar sua vida em uma lista de defeitos.</p></div><div><span>03</span><p><strong>Você começa a perceber os padrões.</strong><br>Inclusive aqueles que parecem diferentes, mas levam ao mesmo lugar.</p></div><div><span>04</span><p><strong>E trabalha isso ao longo dos encontros.</strong><br>Para construir uma relação diferente com você e com aquilo que está vivendo.</p></div></div></div></section>
+
+<section class="trust-check"><div class="shell"><div class="intro narrow"><p class="eyebrow">ANTES DE INVESTIR</p><h2>Você não precisa ter certeza de tudo para dar o primeiro passo.</h2><p class="large">Se eu estivesse chegando aqui pela primeira vez, estas seriam as coisas que eu gostaria de saber antes de decidir.</p></div><div class="trust-grid"><article><span>01</span><h3>Você não precisa chegar pronta.</h3><p>Não precisa saber explicar tudo, nem organizar a história inteira antes de me procurar.</p></article><article><span>02</span><h3>Você não está comprando um pacote no escuro.</h3><p>O primeiro encontro custa R$200. Depois dele, você decide se quer continuar. O ciclo de 4 encontros só entra se fizer sentido.</p></article><article><span>03</span><h3>O objetivo não é te dizer quem você deve ser.</h3><p>É olhar para o que está acontecendo com você e trabalhar, com mais consciência, possibilidades diferentes de responder à vida.</p></article></div></div></section>
 
 <section class="testimonials tint" id="depoimentos"><div class="shell"><div class="intro"><p class="eyebrow">MENSAGENS REAIS</p><h2>Quem vive uma experiência conta o que ficou.</h2><p class="large">Ainda não tenho depoimentos do Volta Para Si. Por isso, aqui entram mensagens reais de participantes das experiências Heal Your Life® que já conduzi.</p></div><div class="quotes workshop-quotes"><blockquote>“Foi muito interessante, nunca tinha participado e nao conhecia também a metodologia aplicada. Achei maravilhoso, bem intenso kkkkk umas visões muito interessantes sobre alguns pontos que a gente traz a tona, muita profundidade”<cite>Participante · Workshop Heal Your Life®</cite></blockquote><blockquote>“Eu tenho vivido um misto de emoções, mais tenho conseguido estar com mais leveza. Sem deixar as cobranças dos outros me afetar.”<cite>Participante · Workshop Heal Your Life®</cite></blockquote><blockquote>“Eu realmente não tenho palavras do bem que você faz. Me peguei chorando mais agora de emoção.”<cite>Participante · Workshop Heal Your Life®</cite></blockquote></div></div></section>
 
