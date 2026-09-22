@@ -25,3 +25,32 @@
  .first-step .two>div+div{margin-top:38px}
  .first-price strong{font-size:36px}
 }
+/* Editorial refinements */
+h1,h2,h3,.hero-question,.recognition-grid p,.quotes blockquote{font-feature-settings:"ss01" 1;font-variant-ligatures:common-ligatures}
+a{color:var(--plum)}
+.text-link{color:var(--plum);text-underline-offset:4px}
+.text-link:hover{color:var(--lilac)}
+.footer>a{color:#e8dce9}
+.brand-name{font-family:"Jost",sans-serif}
+.hero-grid{grid-template-columns:320px 1fr;gap:70px}
+.hero-photo:after{inset:24px -22px -22px 22px}
+.visual-break{padding:92px 0;background:var(--deep);color:#eee3ef;overflow:hidden}
+.visual-break-inner{position:relative}
+.visual-break-mark{display:block;color:var(--olive);font-size:18px;margin-bottom:20px}
+.visual-break h2{max-width:900px;margin:0;color:#fff;font-size:clamp(52px,7vw,92px);line-height:.92}
+.visual-break h2 em{color:#d7c0da;font-weight:400}
+.visual-break p:last-child{max-width:500px;margin:28px 0 0;color:#d9cbdc;font-size:18px}
+.workshop-quotes{grid-template-columns:repeat(3,1fr)}
+.workshop-quotes blockquote{min-height:300px;display:flex;flex-direction:column;justify-content:space-between}
+.workshop-quotes cite{margin-top:26px}
+.site-card,.btn,.recognition-grid>div,.promise-grid>div,.quotes blockquote{transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}
+.recognition-grid>div:hover,.promise-grid>div:hover,.quotes blockquote:hover{transform:translateY(-3px);box-shadow:0 14px 32px rgba(75,33,76,.08);border-color:#c5aec9}
+.btn:hover{transform:translateY(-2px)}
+@media(max-width:760px){
+ .hero-grid{display:flex;gap:42px}
+ .hero-photo{width:min(74vw,320px)}
+ .visual-break{padding:76px 0}
+ .visual-break h2{font-size:48px}
+ .workshop-quotes{display:block}
+ .workshop-quotes blockquote+blockquote{margin-top:14px}
+}
