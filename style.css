@@ -54,3 +54,36 @@ a{color:var(--plum)}
  .workshop-quotes{display:block}
  .workshop-quotes blockquote+blockquote{margin-top:14px}
 }
+
+/* Final typography + spacing pass */
+h1,h2,h3,.hero-question,.recognition-grid p,.quotes blockquote,.visual-break h2{
+  font-family:"Editors Note","Times New Roman",serif !important;
+  font-style:italic !important;
+  font-weight:400 !important;
+  font-synthesis:none;
+  font-feature-settings:normal;
+  font-variant-ligatures:normal;
+  letter-spacing:-.018em;
+}
+h1,h2,h3{line-height:.98}
+section{scroll-margin-top:88px}
+.paths,.testimonials,.recognition,.about,.volta-detail{padding-top:56px;padding-bottom:56px}
+.volta-intro{padding-top:60px;padding-bottom:60px}
+.objection{padding-top:60px;padding-bottom:60px}
+.first-step{padding-top:62px;padding-bottom:62px}
+.tarot-bridge,.investment,.faq{padding-top:58px;padding-bottom:58px}
+.visual-break{padding-top:64px;padding-bottom:64px}
+.final{padding-top:64px;padding-bottom:70px}
+.promise-grid{margin-top:28px}
+.recognition-grid{margin-top:26px}
+.intro{margin-bottom:24px}
+.actions{margin-top:26px}
+@media(max-width:760px){
+  .paths,.testimonials,.recognition,.about,.volta-detail{padding-top:52px;padding-bottom:52px}
+  .volta-intro,.objection,.first-step{padding-top:58px;padding-bottom:58px}
+  .tarot-bridge,.investment,.faq{padding-top:54px;padding-bottom:54px}
+  .visual-break{padding-top:58px;padding-bottom:58px}
+  .final{padding-top:60px;padding-bottom:64px}
+  .intro{margin-bottom:20px}
+  .actions{margin-top:22px}
+}
