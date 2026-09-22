@@ -213,3 +213,28 @@ h1,h2,h3,.hero-question,.recognition-grid p,.quotes blockquote,.visual-break h2{
 .visual-break{padding:42px 0 48px !important}.visual-break-inner{gap:42px !important}
 .method-origin{padding:78px 0;background:var(--deep);color:#eee3ef;overflow:hidden}.method-origin-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start}.method-origin h2{color:#fff;max-width:720px}.method-origin .large{color:#eee3ef}.method-origin p{max-width:650px}.method-origin blockquote{margin:34px 0 0;padding:22px 0 0;border-top:1px solid rgba(255,255,255,.22);font:italic 29px/1.2 "Editors Note","Times New Roman",serif;color:#fff}.method-origin blockquote cite{display:block;margin-top:10px;font:600 10px/1.3 "Jost",sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#cdb8d1}.method-origin .eyebrow{color:#cdb8d1}.tools-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:24px}.tools-grid>div{padding:20px;background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.13);min-height:142px}.tools-grid span{font:600 10px/1 "Jost",sans-serif;letter-spacing:.12em;color:#cdb8d1}.tools-grid h3{font-size:25px;margin:18px 0 8px;color:#fff}.tools-grid p{margin:0;color:#d9ccd9;font-size:13px;line-height:1.45}.tools-note{margin-top:16px;color:#cdb8d1 !important;font-size:12px;line-height:1.5}.final .light-link,.light-link{color:#f4eaf5 !important;text-decoration-color:rgba(244,234,245,.55);text-underline-offset:4px}.final .light-link:hover,.light-link:hover{color:#fff !important}
 @media(max-width:760px){.visual-break{padding:34px 0 40px !important}.visual-break-inner{gap:28px !important}.method-origin{padding:58px 0}.method-origin-grid{display:block}.method-origin-grid>div+div{margin-top:42px}.tools-grid{grid-template-columns:1fr}.tools-grid>div{min-height:0}}
+
+/* Final correction: use the portrait as-is, without blur, clipping or artificial background */
+.hero-photo:before{display:none !important}
+.hero-photo:after{inset:14px -16px -16px 16px !important;border:1px solid #b99fbd !important}
+.hero-photo img{
+  width:253px !important;
+  height:450px !important;
+  max-width:100% !important;
+  aspect-ratio:auto !important;
+  object-fit:contain !important;
+  object-position:center !important;
+  clip-path:none !important;
+  filter:none !important;
+}
+@media(max-width:760px){
+  .hero-photo{width:253px !important;height:450px !important;max-width:88vw !important}
+  .hero-photo img{width:253px !important;height:450px !important;object-fit:contain !important;clip-path:none !important}
+}
+/* Tighten the two mobile transitions that were leaving too much empty space */
+@media(max-width:760px){
+  .first-step{padding-top:34px !important;padding-bottom:38px !important}
+  .about{padding-top:40px !important;padding-bottom:28px !important}
+  .faq{padding-top:34px !important;padding-bottom:42px !important}
+  .about .text-link{margin-top:2px}
+}
