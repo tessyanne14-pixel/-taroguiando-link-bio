@@ -520,3 +520,33 @@ h1,h2,h3,.hero-question,.recognition-grid p,.quotes blockquote,.visual-break h2{
     line-height:1.4 !important;
   }
 }
+
+
+/* Outcome section: make the desired change feel concrete */
+.what-changes{
+  padding:78px 0;
+  background:var(--paper);
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+}
+.what-changes .two{
+  display:grid;
+  grid-template-columns:.9fr 1.1fr;
+  gap:80px;
+  align-items:start;
+}
+.what-changes .large{margin-top:0;color:var(--ink)}
+.what-changes p:not(.eyebrow){max-width:650px;color:var(--muted)}
+.what-changes-close{
+  margin-top:30px !important;
+  padding-top:24px;
+  border-top:1px solid var(--line);
+  color:var(--plum) !important;
+}
+@media(max-width:760px){
+  .what-changes{padding:48px 0}
+  .what-changes .two{display:block}
+  .what-changes .two>div+div{margin-top:24px}
+  .what-changes p:not(.eyebrow){margin-top:12px}
+  .what-changes-close{margin-top:22px !important;padding-top:20px}
+}
