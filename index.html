@@ -68,7 +68,7 @@
 .bio-card{
   position:relative;
   min-height:190px;
-  padding:30px 30px 28px;
+  padding:26px 30px 28px;
   border:1px solid #d8c9d9;
   background:#fff;
   text-decoration:none;
@@ -76,7 +76,7 @@
   overflow:hidden;
   display:flex;
   flex-direction:column;
-  justify-content:flex-end;
+  justify-content:flex-start;
   transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease;
 }
 .bio-card:hover{
@@ -93,10 +93,9 @@
   color:#8a6b95;
 }
 .bio-card .number{
-  position:absolute;
-  left:30px;
-  top:23px;
+  position:static;
   font:600 10px/1 "Jost",sans-serif;
+  margin:0 42px auto 0;
   letter-spacing:.14em;
   color:#8a6b95;
 }
@@ -136,10 +135,11 @@
   .bio-wrap{padding:34px 0 34px}
   .bio-photo{width:112px;height:112px;margin-bottom:21px}
   .bio-intro{margin:18px auto 28px;font-size:15px}
-  .bio-card{min-height:178px;padding:28px 22px 24px}
-  .bio-card .number{left:22px}
+  .bio-card{min-height:178px;padding:25px 22px 24px}
+  .bio-card .number{margin-right:38px}
   .bio-card:after{right:18px}
   .bio-card h2{font-size:35px}
+  .bio-card.site-link h2{font-size:29px}
 }
 </style>
 </head>
