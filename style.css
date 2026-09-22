@@ -136,3 +136,22 @@ h1,h2,h3,.hero-question,.recognition-grid p,.quotes blockquote,.visual-break h2{
   .recognition-grid>div{padding:24px}
   .quotes blockquote{padding:26px}
 }
+
+/* Testimonial cards: let each quote define its own height */
+.workshop-quotes blockquote{
+  min-height:0 !important;
+  display:block !important;
+  height:auto !important;
+  justify-content:initial !important;
+}
+.workshop-quotes cite{
+  margin-top:22px !important;
+}
+@media(max-width:760px){
+  .workshop-quotes blockquote{
+    min-height:0 !important;
+    padding:24px !important;
+  }
+  .workshop-quotes blockquote+blockquote{margin-top:12px !important}
+  .workshop-quotes cite{margin-top:18px !important}
+}
